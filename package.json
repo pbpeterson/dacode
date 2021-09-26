@@ -10,8 +10,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "generate": "plop --plopfile generators/plopfile.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watchAll --maxWorkers=25%"
   },
   "dependencies": {
     "next": "11.1.2",
